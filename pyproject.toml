@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taxi-demand-forecast"
+version = "0.1.0"
+description = "Next-day hourly NYC taxi demand per borough: rolling-origin backtest, baselines to beat, and conformal prediction intervals"
+requires-python = ">=3.12"
+dependencies = [
+  "duckdb>=1.1",
+  "pandas>=2.2",
+  "numpy>=2.0",
+  "scikit-learn>=1.5",
+  "matplotlib>=3.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3"]
+
+[project.scripts]
+taxiforecast = "taxiforecast.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+taxiforecast = ["sql/*.sql"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
