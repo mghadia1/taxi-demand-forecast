@@ -6,7 +6,7 @@ How many yellow-taxi pickups will each NYC borough see in each hour tomorrow? Th
 - a period for choosing the model, and a separate period for reporting it;
 - 90% prediction intervals whose coverage is checked, including by time of day.
 
-> **Status: learning project (September 2026).** It is built, tested, and run on real data, but I am still practising explaining it. It is local only and has not been pushed. The forecasts cover **yellow taxis only**, one year (2024), and a next-day horizon.
+> **Status: learning project (September 2026).** It is built, tested, and run on real data, but I am still practising explaining it. The forecasts cover **yellow taxis only**, one year (2024), and a next-day horizon.
 
 ![Thanksgiving week in Manhattan: forecast, 90% interval, and actuals](docs/figures/thanksgiving_week_manhattan.png)
 
